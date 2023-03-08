@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
+    <consumer name="pineapple_development.assign.sources.product.create"
+              queue="pineapple_development_assign_sources_product_create"
+              connection="db"
+              handler="PineappleDevelopment\ProductAssignSources\Service\Consumer\ProductCreate::process"/>
+</config>
